@@ -117,24 +117,30 @@ const Home = () => {
           <div>
             {/* Skills & Tools */}
             <div>
-              <h2 className="text-2xl font-semibold border-l-4 border-col-logo pl-2">
+              <h2 className="text-2xl font-semibold border-l-4 border-col-logo pl-2 mb-6 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">
                 Skills & Tools
               </h2>
-              <h3>Languages</h3>
-              <ul>
+              <h3 className="font-semibold lg:text-2xl 2xl:text-3xl">
+                Languages:
+              </h3>
+              <ul className="py-6">
                 <li>JavaScript</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Sass</li>
               </ul>
-              <h3>Frameworks</h3>
-              <ul>
+              <h3 className="font-semibold lg:text-2xl 2xl:text-3xl">
+                Frameworks:
+              </h3>
+              <ul className="py-6">
                 <li>React</li>
                 <li>NextJS</li>
                 <li>TailwindCSS</li>
               </ul>
-              <h3>Version Control</h3>
-              <ul>
+              <h3 className="font-semibold lg:text-2xl 2xl:text-3xl">
+                Version Control:
+              </h3>
+              <ul className="py-6">
                 <li>Git</li>
                 <li>GitHub</li>
               </ul>
