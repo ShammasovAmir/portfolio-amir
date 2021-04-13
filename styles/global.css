@@ -1,0 +1,23 @@
+header {
+  background-image: url(../public/images/Banner-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 93vh;
+}
+
+header .circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(14px, 15px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(14px, 62px);
+    z-index: 5;
+  }
+}
