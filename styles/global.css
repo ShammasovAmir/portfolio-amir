@@ -11,6 +11,19 @@ header .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
 
+.--section-styling {
+  background-image: url(../public/images/secondary-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 606px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @keyframes circleAnim {
   from {
     transform: translate(14px, 15px);

@@ -332,6 +332,18 @@ const Home = () => {
           </TopProject>
         </main>
       </section>
+      <section>
+        <div className="--section-styling">
+          <h2 className="text-2xl font-semibold text-col-primary-light mb-6 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">
+            Want me to become part of your team?
+          </h2>
+          <Link href="/contact">
+            <a className="px-3 py-2 lg:px-4 lg:py-3 lg:text-xl font-semibold hover:opacity-80 text-col-primary-light transition duration-300 bg-col-logo rounded-lg">
+              Contact Me
+            </a>
+          </Link>
+        </div>
+      </section>
     </>
   )
 }
