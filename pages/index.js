@@ -114,10 +114,10 @@ const Home = () => {
             </div>
           </div>
           {/* Skills */}
-          <div>
+          <div className="flex flex-col md:flex-row md:justify-between">
             {/* Skills & Tools */}
             <div>
-              <h2 className="text-2xl font-semibold border-l-4 border-col-logo pl-2 mb-6 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">
+              <h2 className="text-2xl font-semibold border-l-4 border-col-logo pl-2 mb-6 lg:text-3xl xl:text-4xl xl:border-l-8 2xl:text-5xl 2xl:mb-8">
                 Skills & Tools
               </h2>
               <h3 className="font-semibold lg:text-2xl 2xl:text-3xl">
@@ -146,7 +146,143 @@ const Home = () => {
               </ul>
             </div>
             {/* Technology icons */}
-            <div></div>
+            <div className="flex flex-row flex-wrap justify-evenly md:w-1/2 h-full md:align-middle">
+              {isBreakpoint ? (
+                <>
+                  <div className="m-6">
+                    <Image
+                      src="/images/next-js.svg"
+                      width={75}
+                      height={75}
+                      alt="NextJS logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/sass-original.svg"
+                      width={75}
+                      height={75}
+                      alt="Sass logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/html5-original-wordmark.svg"
+                      width={75}
+                      height={75}
+                      alt="HTML5 logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/css3-original-wordmark.svg"
+                      width={75}
+                      height={75}
+                      alt="CSS3 logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/git-original-wordmark.svg"
+                      width={75}
+                      height={75}
+                      alt="Git logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/javascript-original.svg"
+                      width={75}
+                      height={75}
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/react-original-wordmark.svg"
+                      width={75}
+                      height={75}
+                      alt="React logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/tailwindcss.svg"
+                      width={75}
+                      height={75}
+                      alt="TailwindCSS logo"
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="m-6">
+                    <Image
+                      src="/images/next-js.svg"
+                      width={125}
+                      height={125}
+                      alt="NextJS logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/sass-original.svg"
+                      width={125}
+                      height={125}
+                      alt="Sass logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/html5-original-wordmark.svg"
+                      width={125}
+                      height={125}
+                      alt="HTML5 logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/css3-original-wordmark.svg"
+                      width={125}
+                      height={125}
+                      alt="CSS3 logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/git-original-wordmark.svg"
+                      width={125}
+                      height={125}
+                      alt="Git logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/javascript-original.svg"
+                      width={125}
+                      height={125}
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/react-original-wordmark.svg"
+                      width={125}
+                      height={125}
+                      alt="React logo"
+                    />
+                  </div>
+                  <div className="m-6">
+                    <Image
+                      src="/images/tailwindcss.svg"
+                      width={125}
+                      height={125}
+                      alt="TailwindCSS logo"
+                    />
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </main>
       </section>
