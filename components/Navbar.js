@@ -76,6 +76,7 @@ const Navbar = () => {
               target="_blank"
             >
               <AiFillLinkedin />
+              <span className="sr-only">Link to Linkedin</span>
             </a>
             <a
               href="#"
@@ -90,6 +91,7 @@ const Navbar = () => {
               target="_blank"
             >
               <AiFillGithub />
+              <span className="sr-only">Link to GitHub</span>
             </a>
           </div>
         </div>
@@ -142,6 +144,7 @@ const Navbar = () => {
                   <li className="hover:text-col-logo">
                     <a href="#">
                       <AiFillLinkedin />
+                      <span className="sr-only">Linkedin link</span>
                     </a>
                   </li>
                   <li className="hover:text-col-logo">
@@ -152,6 +155,7 @@ const Navbar = () => {
                   <li className="hover:text-col-logo">
                     <a href="#">
                       <AiFillGithub />
+                      <span className="sr-only">GitHub link</span>
                     </a>
                   </li>
                 </ul>

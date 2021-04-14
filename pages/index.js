@@ -2,9 +2,12 @@ import Meta from '../components/Meta'
 import Link from 'next/link'
 import { useMediaQuery } from '../utils/useMediaQuery'
 import Image from 'next/image'
+import TopProject from '../components/TopProject'
 
 const Home = () => {
-  const isBreakpoint = useMediaQuery(1280)
+  const isSmBreakpoint = useMediaQuery(640)
+  const isXlBreakpoint = useMediaQuery(1280)
+  const is2XlBreakpoint = useMediaQuery(1536)
 
   return (
     <>
@@ -94,7 +97,7 @@ const Home = () => {
             {/* My Picture */}
             <div className="relative w-48 h-48 mb-12 mt-4 mx-auto md:mx-0 xl:w-72 xl:h-72">
               <div className="absolute top-1/10 left-1/10 bg-col-secondary-dark-gray w-48 h-48 xl:w-72 xl:h-72"></div>
-              {isBreakpoint ? (
+              {isXlBreakpoint ? (
                 <Image
                   src="/images/Portrait.jpg"
                   alt="My Portrait"
@@ -147,7 +150,7 @@ const Home = () => {
             </div>
             {/* Technology icons */}
             <div className="flex flex-row flex-wrap justify-evenly md:w-1/2 h-full md:align-middle">
-              {isBreakpoint ? (
+              {isXlBreakpoint ? (
                 <>
                   <div className="m-6">
                     <Image
@@ -284,6 +287,49 @@ const Home = () => {
               )}
             </div>
           </div>
+        </main>
+      </section>
+      {/* Top Projects */}
+      <section className="mt-8">
+        <main className="w-9/10 mx-auto">
+          <h2 className="text-2xl font-semibold border-l-4 border-col-logo pl-2 mb-6 lg:text-3xl xl:text-4xl xl:border-l-8 2xl:text-5xl 2xl:mb-8">
+            Top Projects
+          </h2>
+          <TopProject
+            title="Test title project"
+            route="contact-me"
+            description="This is an app that generates shades of color provided by user. It's built on react and it uses default css for styling"
+          >
+            {isSmBreakpoint ? (
+              <Image
+                src="/images/shotsnapp-delete-please.jpeg"
+                width={250}
+                height={175}
+                alt="Test project"
+              />
+            ) : isXlBreakpoint ? (
+              <Image
+                src="/images/shotsnapp-delete-please.jpeg"
+                width={400}
+                height={280}
+                alt="Test project"
+              />
+            ) : is2XlBreakpoint ? (
+              <Image
+                src="/images/shotsnapp-delete-please.jpeg"
+                width={600}
+                height={420}
+                alt="Test project"
+              />
+            ) : (
+              <Image
+                src="/images/shotsnapp-delete-please.jpeg"
+                width={800}
+                height={560}
+                alt="Test project"
+              />
+            )}
+          </TopProject>
         </main>
       </section>
     </>
