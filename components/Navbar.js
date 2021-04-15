@@ -38,17 +38,23 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed flex flex-row justify-between w-full h-16 2xl:h-20 z-20">
+      <nav
+        className={`fixed flex flex-row justify-between w-full h-16 2xl:h-20 z-20 ${
+          scrollNav ? 'shadow' : ''
+        }`}
+      >
         {/* Left Side */}
         <div
           className={`flex items-center ${
             scrollNav ? 'bg-col-primary-dark' : ''
           } text-col-primary-light w-full md-plus:w-1/2 pl-five-percent font-open-sans font-bold uppercase`}
         >
-          <a href="#">
-            <span className="font-sans font-light text-col-logo">amir</span>
-            shammasov
-          </a>
+          <Link href="/">
+            <a>
+              <span className="font-sans font-light text-col-logo">amir</span>
+              shammasov
+            </a>
+          </Link>
         </div>
         {/* Right Side */}
         <div className="bg-col-primary-light hidden md-plus:flex items-center justify-between w-1/2 px-five-percent">
