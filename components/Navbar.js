@@ -77,22 +77,22 @@ const Navbar = () => {
           </ul>
           <div className="flex flex-row space-x-2 lg:space-x-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/amir-shammasov-174b6b204"
               className="text-2xl 2xl:text-3xl hover:text-col-logo transition duration-300"
               target="_blank"
             >
               <AiFillLinkedin />
               <span className="sr-only">Link to Linkedin</span>
             </a>
-            <a
+            {/* <a
               href="#"
               className="text-2xl 2xl:text-3xl hover:text-col-logo transition duration-300"
               target="_blank"
             >
               <AiFillFacebook />
-            </a>
+            </a> */}
             <a
-              href="#"
+              href="https://github.com/ShammasovAmir"
               className="text-2xl 2xl:text-3xl hover:text-col-logo transition duration-300"
               target="_blank"
             >
@@ -148,18 +148,18 @@ const Navbar = () => {
               <li className="my-ten-screen-height">
                 <ul className="flex flex-row justify-between">
                   <li className="hover:text-col-logo">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/amir-shammasov-174b6b204">
                       <AiFillLinkedin />
                       <span className="sr-only">Linkedin link</span>
                     </a>
                   </li>
-                  <li className="hover:text-col-logo">
+                  {/* <li className="hover:text-col-logo">
                     <a href="#">
                       <AiFillFacebook />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="hover:text-col-logo">
-                    <a href="#">
+                    <a href="https://github.com/ShammasovAmir">
                       <AiFillGithub />
                       <span className="sr-only">GitHub link</span>
                     </a>

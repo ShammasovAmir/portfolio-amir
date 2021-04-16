@@ -11,7 +11,11 @@ const Home = () => {
 
   return (
     <>
-      <Meta />
+      <Meta
+        title="Amir Shammasov | Frontend Engineer"
+        description="Amir Shammasov's Web Developer Portfolio"
+        keywords="Web Developer, Frontend Developer, Frontend Software Engineer, JavaScript Developer, Product-oriented Engineer, Remote Software Developer."
+      />
       <header>
         <main className="grid content-center w-9/10 h-full mx-auto text-center text-col-primary-light">
           <h1 className="mb-6 font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
@@ -149,7 +153,7 @@ const Home = () => {
               </ul>
             </div>
             {/* Technology icons */}
-            <div className="flex flex-row flex-wrap justify-evenly md:w-1/2 h-full md:align-middle">
+            <div className="flex flex-row flex-wrap md:w-1/2 h-full md:align-middle">
               {isXlBreakpoint ? (
                 <>
                   <div className="m-6">
@@ -337,7 +341,7 @@ const Home = () => {
           <h2 className="text-2xl font-semibold text-col-primary-light mb-6 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">
             Looking to give me a jop opportunity?
           </h2>
-          <Link href="/contact">
+          <Link href="/contact-me">
             <a className="bg-col-logo text-col-primary-light text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1">
               Contact Me
             </a>

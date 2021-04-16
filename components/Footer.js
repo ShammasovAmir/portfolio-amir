@@ -12,7 +12,7 @@ const Footer = () => {
           <ul>
             <li className="my-2 xl:my-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/amir-shammasov-174b6b204"
                 className="text-col-secondary-light hover:text-col-logo flex items-center"
               >
                 <AiFillLinkedin /> Linkedin
@@ -20,7 +20,7 @@ const Footer = () => {
             </li>
             <li className="my-2 xl:my-4">
               <a
-                href="#"
+                href="https://github.com/ShammasovAmir"
                 className="text-col-secondary-light hover:text-col-logo flex items-center"
               >
                 <AiFillGithub /> GitHub
