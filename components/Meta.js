@@ -8,7 +8,7 @@ const Meta = ({ title, description, keywords }) => {
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Amir Shammasov"></meta>
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="favicon.svg" />
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
