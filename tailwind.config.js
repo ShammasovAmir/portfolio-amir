@@ -34,6 +34,10 @@ module.exports = {
       },
       height: {
         125: '500px',
+        '150px': '150px',
+        '350px': '350px',
+        '425px': '425px',
+        '600px': '600px',
       },
       minHeight: {
         100: '400px',
@@ -43,6 +47,7 @@ module.exports = {
       },
       screens: {
         'md-plus': '970px',
+        thousand: '1000px',
       },
       zIndex: {
         5: '5',

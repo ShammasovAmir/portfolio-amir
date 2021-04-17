@@ -300,34 +300,34 @@ const Home = () => {
             Top Projects
           </h2>
           <TopProject
-            title="Test title project"
-            route="contact-me"
-            description="This is an app that generates shades of color provided by user. It's built on react and it uses default css for styling"
+            title="Shmoom"
+            route="project-shmoom"
+            description="This is a simple peer to peer video chat app. It uses react, nodejs, material-ui, socket.io, WebRTC."
           >
             {isSmBreakpoint ? (
               <Image
-                src="/images/shotsnapp-delete-please.jpeg"
+                src="/images/shmoom-on-screen.jpeg"
                 width={250}
                 height={175}
                 alt="Test project"
               />
             ) : isXlBreakpoint ? (
               <Image
-                src="/images/shotsnapp-delete-please.jpeg"
+                src="/images/shmoom-on-screen.jpeg"
                 width={400}
                 height={280}
                 alt="Test project"
               />
             ) : is2XlBreakpoint ? (
               <Image
-                src="/images/shotsnapp-delete-please.jpeg"
+                src="/images/shmoom-on-screen.jpeg"
                 width={600}
                 height={420}
                 alt="Test project"
               />
             ) : (
               <Image
-                src="/images/shotsnapp-delete-please.jpeg"
+                src="/images/shmoom-on-screen.jpeg"
                 width={800}
                 height={560}
                 alt="Test project"
