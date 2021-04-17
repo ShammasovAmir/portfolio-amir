@@ -27,12 +27,14 @@ const ProjectShmoom = () => {
               <a
                 href="https://shmoom.com"
                 className="bg-col-logo text-col-primary-light text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1"
+                target="_blank"
               >
                 Live site
               </a>
               <a
                 href="https://github.com/ShammasovAmir/shmoom"
                 className="bg-col-primary-light text-col-primary-dark text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1"
+                target="_blank"
               >
                 GitHub
               </a>
