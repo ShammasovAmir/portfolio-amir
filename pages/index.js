@@ -1,7 +1,6 @@
 import Meta from '../components/Meta'
 import Link from 'next/link'
 import { useMediaQuery } from '../utils/useMediaQuery'
-import Image from 'next/image'
 import TopProject from '../components/TopProject'
 
 const Home = () => {
@@ -102,19 +101,19 @@ const Home = () => {
             <div className="relative w-48 h-48 mb-12 mt-4 mx-auto md:mx-0 xl:w-72 xl:h-72">
               <div className="absolute top-1/10 left-1/10 bg-col-secondary-dark-gray w-48 h-48 xl:w-72 xl:h-72"></div>
               {isXlBreakpoint ? (
-                <Image
+                <img
+                  loading="lazy"
                   src="/images/Portrait.jpg"
                   alt="My Portrait"
-                  width={192}
-                  height={192}
+                  style={{ width: '192px', height: '192px' }}
                   className="absolute z-5 object-cover"
                 />
               ) : (
-                <Image
+                <img
+                  loading="lazy"
                   src="/images/Portrait.jpg"
                   alt="My Portrait"
-                  width={288}
-                  height={288}
+                  style={{ width: '288px', height: '288px' }}
                   className="absolute z-5 object-cover"
                 />
               )}
@@ -157,66 +156,74 @@ const Home = () => {
               {isXlBreakpoint ? (
                 <>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/next-js.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="NextJS logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/sass-original.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="Sass logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/html5-original-wordmark.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="HTML5 logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/css3-original-wordmark.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="CSS3 logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/git-original-wordmark.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="Git logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/javascript-original.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="JavaScript logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/react-original-wordmark.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="React logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/tailwindcss.svg"
-                      width={75}
-                      height={75}
+                      style={{ width: '75px', height: '75px' }}
                       alt="TailwindCSS logo"
                     />
                   </div>
@@ -224,66 +231,74 @@ const Home = () => {
               ) : (
                 <>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/next-js.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="NextJS logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/sass-original.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="Sass logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/html5-original-wordmark.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="HTML5 logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/css3-original-wordmark.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="CSS3 logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/git-original-wordmark.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="Git logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/javascript-original.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="JavaScript logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/react-original-wordmark.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="React logo"
                     />
                   </div>
                   <div className="m-6">
-                    <Image
+                    <img
+                      className="object-contain"
+                      loading="lazy"
                       src="/images/tailwindcss.svg"
-                      width={125}
-                      height={125}
+                      style={{ width: '125px', height: '125px' }}
                       alt="TailwindCSS logo"
                     />
                   </div>
@@ -305,32 +320,36 @@ const Home = () => {
             description="This is a simple peer to peer video chat app. It uses react, nodejs, material-ui, socket.io, WebRTC."
           >
             {isSmBreakpoint ? (
-              <Image
+              <img
+                loading="lazy"
+                className="object-contain"
                 src="/images/shmoom-on-screen.jpeg"
-                width={250}
-                height={175}
-                alt="Test project"
+                style={{ width: '250px', height: '175px' }}
+                alt="Shmoom on screen"
               />
             ) : isXlBreakpoint ? (
-              <Image
+              <img
+                loading="lazy"
+                className="object-contain"
                 src="/images/shmoom-on-screen.jpeg"
-                width={400}
-                height={280}
-                alt="Test project"
+                style={{ width: '400px', height: '280px' }}
+                alt="Shmoom on screen"
               />
             ) : is2XlBreakpoint ? (
-              <Image
+              <img
+                loading="lazy"
+                className="object-contain"
                 src="/images/shmoom-on-screen.jpeg"
-                width={600}
-                height={420}
-                alt="Test project"
+                style={{ width: '600px', height: '420px' }}
+                alt="Shmoom on screen"
               />
             ) : (
-              <Image
+              <img
+                loading="lazy"
+                className="object-contain"
                 src="/images/shmoom-on-screen.jpeg"
-                width={800}
-                height={560}
-                alt="Test project"
+                style={{ width: '800px', height: '560px' }}
+                alt="Shmoom on screen"
               />
             )}
           </TopProject>

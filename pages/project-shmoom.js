@@ -1,5 +1,4 @@
 import Meta from '../components/Meta'
-import Image from 'next/image'
 import { useMediaQuery } from '../utils/useMediaQuery'
 
 const ProjectShmoom = () => {
@@ -47,19 +46,39 @@ const ProjectShmoom = () => {
         >
           {isSmBreakpoint ? (
             <div className="grid justify-center mb-12">
-              <Image src="/images/shmoom.png" width={240} height={150} />
+              <img
+                src="/images/shmoom.png"
+                style={{ width: '240px', height: '150px' }}
+                alt="Shmoom screenshot"
+                className="object-cover"
+              />
             </div>
           ) : isMdBreakpoint ? (
             <div className="grid justify-center mb-16">
-              <Image src="/images/shmoom.png" width={560} height={350} />
+              <img
+                src="/images/shmoom.png"
+                style={{ width: '560px', height: '350px' }}
+                alt="Shmoom screenshot"
+                className="object-cover"
+              />
             </div>
           ) : isLgBreakpoint ? (
             <div className="grid justify-center mb-20">
-              <Image src="/images/shmoom.png" width={680} height={425} />
+              <img
+                src="/images/shmoom.png"
+                style={{ width: '680px', height: '425px' }}
+                alt="Shmoom screenshot"
+                className="object-cover"
+              />
             </div>
           ) : (
             <div className="grid justify-center mb-24">
-              <Image src="/images/shmoom.png" width={960} height={600} />
+              <img
+                src="/images/shmoom.png"
+                style={{ width: '960px', height: '600px' }}
+                alt="Shmoom screenshot"
+                className="object-cover"
+              />
             </div>
           )}
           <p className="mb-12">
