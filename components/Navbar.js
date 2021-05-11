@@ -132,17 +132,17 @@ const Navbar = () => {
             >
               <li className="my-ten-screen-height hover:text-col-logo">
                 <Link href="/">
-                  <a>Home</a>
+                  <a onClick={() => setDropdownMenu(false)}>Home</a>
                 </Link>
               </li>
               <li className="my-ten-screen-height hover:text-col-logo">
                 <Link href="/blog">
-                  <a>Blog</a>
+                  <a onClick={() => setDropdownMenu(false)}>Blog</a>
                 </Link>
               </li>
               <li className="my-ten-screen-height hover:text-col-logo">
                 <Link href="/contact-me">
-                  <a>Contact Me</a>
+                  <a onClick={() => setDropdownMenu(false)}>Contact Me</a>
                 </Link>
               </li>
               <li className="my-ten-screen-height">

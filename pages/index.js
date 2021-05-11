@@ -358,7 +358,7 @@ const Home = () => {
       <section>
         <div className="--section-styling">
           <h2 className="text-2xl font-semibold text-col-primary-light mb-6 lg:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">
-            Looking to give me a jop opportunity?
+            Want to have a chat?
           </h2>
           <Link href="/contact-me">
             <a className="bg-col-logo text-col-primary-light text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1">
