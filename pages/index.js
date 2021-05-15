@@ -315,9 +315,48 @@ const Home = () => {
             Top Projects
           </h2>
           <TopProject
+            title="Ga-la Agency"
+            route="project-ga-la"
+            description="Ga-la agency website is based on a template from leadpages. It's built using vanilla JavaScript, Parcel and Sass."
+          >
+            {isSmBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/ga-la-on-screen.jpeg"
+                style={{ width: '250px', height: '175px' }}
+                alt="Ga-la agency site on screen"
+              />
+            ) : isXlBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/ga-la-on-screen.jpeg"
+                style={{ width: '400px', height: '280px' }}
+                alt="Ga-la agency site on screen"
+              />
+            ) : is2XlBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/ga-la-on-screen.jpeg"
+                style={{ width: '600px', height: '420px' }}
+                alt="Ga-la agency site on screen"
+              />
+            ) : (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/ga-la-on-screen.jpeg"
+                style={{ width: '800px', height: '560px' }}
+                alt="Ga-la agency site on screen"
+              />
+            )}
+          </TopProject>
+          <TopProject
             title="Shmoom"
             route="project-shmoom"
-            description="This is a simple peer to peer video chat app. It uses react, nodejs, material-ui, socket.io, WebRTC."
+            description="Shmoom is a simple peer to peer video chat app. It uses react, nodejs, material-ui, socket.io, WebRTC."
           >
             {isSmBreakpoint ? (
               <img
@@ -350,6 +389,45 @@ const Home = () => {
                 src="/images/shmoom-on-screen.jpeg"
                 style={{ width: '800px', height: '560px' }}
                 alt="Shmoom on screen"
+              />
+            )}
+          </TopProject>
+          <TopProject
+            title="Starbucks Landing Page"
+            route="project-starbucks"
+            description="This is a demo version of a Starbucks landing page. It's made with vanilla HTML, CSS and JavaScript."
+          >
+            {isSmBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/starbucks-clone-on-screen.jpeg"
+                style={{ width: '250px', height: '175px' }}
+                alt="Starbucks Landing on screen"
+              />
+            ) : isXlBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/starbucks-clone-on-screen.jpeg"
+                style={{ width: '400px', height: '280px' }}
+                alt="Starbucks Landing on screen"
+              />
+            ) : is2XlBreakpoint ? (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/starbucks-clone-on-screen.jpeg"
+                style={{ width: '600px', height: '420px' }}
+                alt="Starbucks Landing on screen"
+              />
+            ) : (
+              <img
+                loading="lazy"
+                className="object-contain"
+                src="/images/starbucks-clone-on-screen.jpeg"
+                style={{ width: '800px', height: '560px' }}
+                alt="Starbucks Landing on screen"
               />
             )}
           </TopProject>
